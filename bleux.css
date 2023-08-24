@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e172f;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    color: #7c7785;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.blanco{
+    color: white;
+}
+.boton{
+    background: linear-gradient(to right, rgb(171, 4, 255),rgb(0, 179, 255));
+    color: white;
+}
+.primero{
+    display: flex;
+}
+.primero .fondo{
+    width: 50%;
+    color: white;
+    background-color: #2e2550;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.fondo .hijo1{
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+.fondo h1{
+    font-size: 100px;
+}
+.fondo p{
+    font-size: 25px;
+}
+
+.fondo .botones{
+    border: 1px solid #585173;
+    width:350px ;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botones .botonblanco{
+    color: #f12e92;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+.botones .botongris{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    height: 50px;
+    width: 130px;
+}
+.primero .imagenhojas{
+    background-image: url(../img/hojasFondo.jpg);
+    width: 50%;
+    display: flex;
+}
+
+.imagenhojas img{
+    height: 70vh;
+    margin-top: 150px ;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+ .segundo {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+ .segundo h1{
+     padding: 100px;
+     font-size: 50px;
+     color: #f41486;
+ }
+ .titulo{
+justify-content: center;
+ }
+.todo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.todo img{
+    height: 400px;
+    width: 700px;
+}
+.lista{
+    width: 400px;
+    
+}
+.lista h2{
+color: #c75690;
+font-size: 30px;
+padding: 20px;
+}
+.lista ul{
+    list-style: none;
+}
+.lista ul li{
+    padding: 5px;
+} 
+.tercero{
+    display: flex;
+    background-color: #1e172f;
+    width: 100%;
+    flex-direction: column;
+   align-items: center;
+}
+
+.tercero h2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 30px;
+    text-align: center;
+}
+.tercero center{
+    color: white;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+ .cajas{
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+     padding: 70px;
+ }
+
+ .caja{
+     display: flex;
+    width: 20%;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+}
+.caja .rosa{
+    font-size: 20px;
+    color: #f41486;
+}
+.caja .negro{
+    font-size: 20px;
+}
+.lineagris{
+    display: flex;
+    width: 100%;
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+.lineagris h1{
+    color:#000 ;
+    font-size: 45px;
+
+}
+ul{
+    list-style: none;
+    padding: 30px;
+}
+
+ul li img{
+    width: 10%;
+}
+ .caja p{
+     color: #000;
+ }
+
+
+ .lineagris button{
+     color: #fff;
+     font-size: 18px;
+     width: 200px;
+     height: 50px;
+     border: none;
+     border-radius: 10px;
+ }
+ .lineagris .rosado{
+     background-color: #ef449b;
+ }
+
+ .lineagris .botonnegro{
+     background-color: #2e2550;
+ }
+ footer {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 100px;
+    padding: 50px;
+}
+
+footer img{
+    width: 17px;
+}
+
+@media screen and (max-width:1279px) {
+    .fondo .hijo1{
+        margin-left: 100px;
+    }
+    .caja{
+        width: 29%;
+    }
+    .tercero center{
+        width: 74%;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .fondo .hijo1 {
+        margin-left: 23px;
+      }
+      .todo{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .lineagris{
+        width: 162px;
+      }
+}
+@media screen and (max-width:768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .primero {
+        display: flex;
+        flex-direction: column;
+    }
+    .primero .fondo {
+        width: 100%;
+    }
+    .primero .imagenhojas {
+        width: 100%;
+    }
+    .todo img {
+        height: auto;
+        width: inherit;
+      }
+
+      .cajas{
+        flex-direction: column;
+        align-items: center;
+      }
+      .caja {
+        width: 50%;
+        margin-bottom: 25px;
+      }
+}
+
+@media screen and (max-width:480px) {
+    .fondo .hijo1 {
+        margin-left: 1px;
+      }
+      .fondo h1 {
+        font-size: 80px;
+      }
+      .fondo p {
+        font-size: 20px;
+      }
+
+}
+
+@media screen and (max-width:352px) {
+     
+    .imagenhojas img {
+    margin-left: 38px;
+    }
+    .lista {
+        width: 275px;
+      }
+      .cajas{
+      width: 135%;
+      }
+      footer {
+        width: 103%;
+    }
+
+}
