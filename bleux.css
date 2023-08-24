@@ -73,7 +73,7 @@ header ul li{
     width: 130px;
 }
 .primero .imagenhojas{
-    background-image: url(../img/hojasFondo.jpg);
+    background-image: url(./img/hojasFondo.jpg);
     width: 50%;
     display: flex;
 }
